@@ -1,0 +1,15 @@
+=================================================================
+巡检开始时间: 2026-06-23 13:22:13
+=================================================================
+[SUCCESS] 根分区磁盘空间正常: 51%
+[SUCCESS] 系统内存充足，当前可用:  MB
+[SUCCESS] 进程检查: NameNode 正在运行
+[SUCCESS] 进程检查: DataNode 正在运行
+[SUCCESS] 进程检查: NodeManager 正在运行
+[SUCCESS] 进程检查: ResourceManager 正在运行
+[SUCCESS] 进程检查: RunJar 正在运行
+[SUCCESS] 进程检查: HMaster 正在运行
+[SUCCESS] 进程检查: ThriftServer 正在运行
+[SUCCESS] MySQL 关系型数据库 服务端口 (3306) 监听正常
+[SUCCESS] HDFS RPC通信接口 服务端口 (9000) 监听正常
+[SUCCESS] HBase Thrift 接口 服务端口 (9090) 监听正常

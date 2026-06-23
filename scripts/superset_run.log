@@ -1,0 +1,533 @@
+nohup: 忽略输入
+Loaded your LOCAL configuration at [/home/zuohui/spark_venv/bin/superset_config.py]
+2026-06-22 21:19:56,237:INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+2026-06-22 21:19:56,237:INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+2026-06-22 21:19:56,629:INFO:superset.app:Syncing configuration to database...
+2026-06-22 21:19:56,639:INFO:superset.app:Configuration sync to database completed successfully
+2026-06-22 21:19:57,510:INFO:superset.core.mcp.core_mcp_injection:fastmcp is not installed, skipping MCP initialization. Install it with: pip install 'apache-superset[fastmcp]'
+ * Serving Flask app 'superset'
+ * Debug mode: off
+2026-06-22 21:19:57,512:INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://192.168.32.129:8088
+2026-06-22 21:19:57,513:INFO:werkzeug:[33mPress CTRL+C to quit[0m
+2026-06-22 21:20:11,075:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:11] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-22 21:20:11,086:WARNING:root:Failed to add user to db session: Class 'werkzeug.local.LocalProxy' is not mapped
+2026-06-22 21:20:11,132:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:11] "[32mGET /superset/welcome/ HTTP/1.1[0m" 302 -
+2026-06-22 21:20:11,652:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 21:20:11,776:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:11] "GET /login/?next=/superset/welcome/ HTTP/1.1" 200 -
+2026-06-22 21:20:12,008:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/8706.6dfab372988d20453152.entry.css HTTP/1.1" 200 -
+2026-06-22 21:20:12,012:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 200 -
+2026-06-22 21:20:12,032:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/thumbnail.824b899f1b7b91c556af.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,045:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/theme.5d27e91c941caf51f4a7.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,072:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/1203.a1e986c5d8f5a4c4375a.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,089:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/3185.f10541918219d72b470f.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,104:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/1541.56876400fc511af10839.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,105:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/5037.d56aa78e5779995d016c.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,150:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/7634.0acd07e01787179c928e.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,153:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/952.fcf16880ee68d8064d11.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,157:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/vendors.6f4ecbc3d2e23e236060.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,164:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/616.94c331d4202698eb2aa9.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,212:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/2290.4aef28ca85361c2fdbd3.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,219:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/6934.9afbba59e4bb25c0c44e.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,250:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/6707.35038bbaa024309b7dd8.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,262:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/180.4f9024017a377ac30f78.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,267:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/8085.4bc9b7059e85ba458bcb.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,303:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/8706.6dfab372988d20453152.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,308:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/8115.535b4174a7ea7a91d01a.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,309:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/9059.b2f889ad23bd80f99e2a.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,310:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/2795.af7b90bb1b1f9b21e098.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,312:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/spa.3c707e777337bc9d8e88.entry.js HTTP/1.1" 200 -
+2026-06-22 21:20:12,349:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:12] "GET /static/assets/images/favicon.png HTTP/1.1" 200 -
+2026-06-22 21:20:13,526:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:13] "GET /static/assets/c6db7a32d1cde8f8f515.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:20:13,572:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:13] "GET /static/assets/images/superset-logo-horiz.png HTTP/1.1" 200 -
+2026-06-22 21:20:13,645:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:13] "GET /static/assets/eca1e21531598d5db58f.woff2 HTTP/1.1" 200 -
+2026-06-22 21:20:14,222:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:14] "GET /static/assets/b7c27c60f848f2083f45.woff2 HTTP/1.1" 200 -
+2026-06-22 21:20:14,567:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:14] "[32mPOST /superset/log/?explode=events HTTP/1.1[0m" 302 -
+2026-06-22 21:20:14,694:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 21:20:14,697:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:14] "GET /login/?next=http://127.0.0.1:8088/superset/log/?explode%3Devents HTTP/1.1" 200 -
+2026-06-22 21:20:16,334:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:16] "GET /static/service-worker.js HTTP/1.1" 200 -
+2026-06-22 21:20:23,054:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[32mPOST /login/?next=/superset/welcome/ HTTP/1.1[0m" 302 -
+2026-06-22 21:20:23,291:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 21:20:23,303:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "GET /superset/welcome/ HTTP/1.1" 200 -
+2026-06-22 21:20:23,472:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/thumbnail.824b899f1b7b91c556af.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,480:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/theme.5d27e91c941caf51f4a7.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,484:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/1203.a1e986c5d8f5a4c4375a.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,499:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/5037.d56aa78e5779995d016c.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,508:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/1541.56876400fc511af10839.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,512:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/952.fcf16880ee68d8064d11.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,517:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/3185.f10541918219d72b470f.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,538:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/7634.0acd07e01787179c928e.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,557:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/616.94c331d4202698eb2aa9.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,569:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/2290.4aef28ca85361c2fdbd3.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,617:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/180.4f9024017a377ac30f78.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,618:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/8706.6dfab372988d20453152.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,627:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/6934.9afbba59e4bb25c0c44e.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,635:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/6707.35038bbaa024309b7dd8.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,718:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/9059.b2f889ad23bd80f99e2a.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,724:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/8085.4bc9b7059e85ba458bcb.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,725:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/8115.535b4174a7ea7a91d01a.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,730:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/spa.3c707e777337bc9d8e88.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,742:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/2795.af7b90bb1b1f9b21e098.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,757:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/vendors.6f4ecbc3d2e23e236060.entry.js HTTP/1.1[0m" 304 -
+2026-06-22 21:20:23,823:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:23] "[36mGET /static/assets/images/favicon.png HTTP/1.1[0m" 304 -
+2026-06-22 21:20:25,972:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:25] "GET /api/v1/log/recent_activity/?q=(distinct:!f,page_size:24) HTTP/1.1" 200 -
+2026-06-22 21:20:26,023:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-22 21:20:26,110:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:20:26,229:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/saved_query/?q=(filters:!((col:created_by,opr:rel_o_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:20:26,297:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/chart/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:20:26,369:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/dashboard/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:20:26,570:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:20:26,586:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/chart/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:20:26,591:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:26] "GET /api/v1/dashboard/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:20:27,113:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:27] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:20:27,136:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:20:27] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:22:00,132:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:00] "GET /static/assets/2f05b2ab245fa4fd6869.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:22:00,507:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:00] "GET /api/v1/dataset/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:22:00,525:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:00] "GET /api/v1/dataset/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:22:01,186:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:01] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:22:25,907:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:25] "GET /api/v1/log/recent_activity/?q=(distinct:!f,page_size:24) HTTP/1.1" 200 -
+2026-06-22 21:22:26,176:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/chart/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:22:26,197:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/dashboard/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:22:26,258:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/saved_query/?q=(filters:!((col:created_by,opr:rel_o_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:22:26,369:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:22:26,400:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/chart/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:22:26,409:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/dashboard/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-22 21:22:26,513:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:26] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:22:42,042:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:42] "GET /api/v1/dataset/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:22:42,082:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:42] "GET /api/v1/dataset/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:22:42,919:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:42] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:22:49,814:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:49] "GET /static/assets/f6fc017ef0630449338d.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:22:50,122:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:50] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:ct,value:'')),order_column:database_name,order_direction:asc,page:0,page_size:100) HTTP/1.1" 200 -
+2026-06-22 21:22:50,924:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:22:50] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:23:16,450:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:16] "[32mGET /databaseview/list HTTP/1.1[0m" 308 -
+2026-06-22 21:23:16,565:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 21:23:16,569:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:16] "GET /databaseview/list/ HTTP/1.1" 200 -
+2026-06-22 21:23:17,812:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:17] "GET /static/assets/28543d154e04e3201f71.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:23:18,043:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:23:18,062:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-22 21:23:18,314:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "GET /api/v1/database/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:23:18,326:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "GET /api/v1/database/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:23:18,341:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:23:18,848:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:18] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:23:21,085:WARNING:superset.views.error_handling:HTTPException
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-06-22 21:23:21,094:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:21] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 21:23:21,095:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-22 21:23:43,567:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:43] "[32mGET /databaseview/list HTTP/1.1[0m" 308 -
+2026-06-22 21:23:43,640:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 21:23:43,644:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:43] "GET /databaseview/list/ HTTP/1.1" 200 -
+2026-06-22 21:23:45,245:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:45] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:23:45,263:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:45] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-22 21:23:45,488:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:45] "GET /api/v1/database/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:23:45,504:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:45] "GET /api/v1/database/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:23:45,515:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:45] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:23:46,325:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:46] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:23:52,221:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:52] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:23:52,267:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:23:52] "GET /api/v1/database/available/ HTTP/1.1" 200 -
+2026-06-22 21:24:28,814:WARNING:superset.views.error_handling:SupersetErrorsException
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask_appbuilder/security/decorators.py", line 128, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 120, in wraps
+    duration, response = time_function(f, self, *args, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/core.py", line 1559, in time_function
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/log.py", line 301, in wrapper
+    value = f(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 92, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/databases/api.py", line 2005, in validate_parameters
+    command.run()
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/commands/database/validate.py", line 72, in run
+    raise InvalidParametersError(errors)
+superset.commands.database.exceptions.InvalidParametersError: [SupersetError(message='One or more parameters are missing: database, port', error_type=<SupersetErrorType.CONNECTION_MISSING_PARAMETERS_ERROR: 'CONNECTION_MISSING_PARAMETERS_ERROR'>, level=<ErrorLevel.WARNING: 'warning'>, extra={'missing': ['database', 'port'], 'issue_codes': [{'code': 1018, 'message': 'Issue 1018 - One or more parameters needed to configure a database are missing.'}]})]
+2026-06-22 21:24:28,819:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:24:28] "[31m[1mPOST /api/v1/database/validate_parameters/ HTTP/1.1[0m" 422 -
+2026-06-22 21:24:36,536:WARNING:superset.views.error_handling:SupersetErrorsException
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask_appbuilder/security/decorators.py", line 128, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 120, in wraps
+    duration, response = time_function(f, self, *args, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/core.py", line 1559, in time_function
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/log.py", line 301, in wrapper
+    value = f(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 92, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/databases/api.py", line 2005, in validate_parameters
+    command.run()
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/commands/database/validate.py", line 72, in run
+    raise InvalidParametersError(errors)
+superset.commands.database.exceptions.InvalidParametersError: [SupersetError(message='One or more parameters are missing: database', error_type=<SupersetErrorType.CONNECTION_MISSING_PARAMETERS_ERROR: 'CONNECTION_MISSING_PARAMETERS_ERROR'>, level=<ErrorLevel.WARNING: 'warning'>, extra={'missing': ['database'], 'issue_codes': [{'code': 1018, 'message': 'Issue 1018 - One or more parameters needed to configure a database are missing.'}]})]
+2026-06-22 21:24:36,539:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:24:36] "[31m[1mPOST /api/v1/database/validate_parameters/ HTTP/1.1[0m" 422 -
+2026-06-22 21:24:53,186:WARNING:superset.views.error_handling:SupersetErrorsException
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/MySQLdb/connections.py", line 206, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'admin'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/commands/database/validate.py", line 107, in run
+    with closing(engine.raw_connection()) as conn:
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/MySQLdb/connections.py", line 206, in __init__
+    super().__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1045, "Access denied for user 'admin'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/flask_appbuilder/security/decorators.py", line 128, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 120, in wraps
+    duration, response = time_function(f, self, *args, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/core.py", line 1559, in time_function
+    response = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/utils/log.py", line 301, in wrapper
+    value = f(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/base_api.py", line 92, in wraps
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/databases/api.py", line 2005, in validate_parameters
+    command.run()
+  File "/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/commands/database/validate.py", line 130, in run
+    raise DatabaseTestConnectionFailedError(errors, status=400) from ex
+superset.commands.database.exceptions.DatabaseTestConnectionFailedError: [SupersetError(message='Either the username "admin" or the password is incorrect.', error_type=<SupersetErrorType.CONNECTION_ACCESS_DENIED_ERROR: 'CONNECTION_ACCESS_DENIED_ERROR'>, level=<ErrorLevel.ERROR: 'error'>, extra={'invalid': ['username', 'password'], 'engine_name': 'MySQL', 'issue_codes': [{'code': 1014, 'message': 'Issue 1014 - Either the username or the password is wrong.'}, {'code': 1015, 'message': 'Issue 1015 - Either the database is spelled incorrectly or does not exist.'}]})]
+2026-06-22 21:24:53,218:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:24:53] "[31m[1mPOST /api/v1/database/validate_parameters/ HTTP/1.1[0m" 400 -
+2026-06-22 21:25:01,805:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:01] "POST /api/v1/database/validate_parameters/ HTTP/1.1" 200 -
+2026-06-22 21:25:10,785:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:10] "POST /api/v1/database/validate_parameters/ HTTP/1.1" 200 -
+2026-06-22 21:25:16,712:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:16] "POST /api/v1/database/validate_parameters/ HTTP/1.1" 200 -
+2026-06-22 21:25:17,434:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:17] "[35m[1mPOST /api/v1/database/ HTTP/1.1[0m" 201 -
+2026-06-22 21:25:17,715:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:17] "GET /api/v1/database/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:25:40,418:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:40] "POST /api/v1/database/validate_parameters/ HTTP/1.1" 200 -
+2026-06-22 21:25:40,940:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:40] "PUT /api/v1/database/1 HTTP/1.1" 200 -
+2026-06-22 21:25:41,433:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:41] "GET /api/v1/database/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:25:41,443:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:25:41] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 21:26:16,804:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:16] "GET /api/v1/dataset/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-22 21:26:16,841:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:16] "GET /api/v1/dataset/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-22 21:26:17,552:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:17] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:26:22,332:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:22] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:ct,value:'')),order_column:database_name,order_direction:asc,page:0,page_size:100) HTTP/1.1" 200 -
+2026-06-22 21:26:23,103:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:23] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:26:25,834:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:25] "GET /api/v1/database/1/schemas/?q=(force:!f) HTTP/1.1" 200 -
+2026-06-22 21:26:37,535:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:37] "GET /api/v1/dataset/?q=(filters:!((col:database,opr:rel_o_m,value:1),(col:schema,opr:eq,value:card_analysis),(col:sql,opr:dataset_is_null_or_empty,value:!t)),page:0) HTTP/1.1" 200 -
+2026-06-22 21:26:37,926:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:37] "GET /api/v1/database/1/tables/?q=(force:!f,schema_name:card_analysis) HTTP/1.1" 200 -
+2026-06-22 21:26:43,293:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:43] "GET /api/v1/database/1/table_metadata/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 21:26:57,181:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "[35m[1mPOST /api/v1/dataset/ HTTP/1.1[0m" 201 -
+2026-06-22 21:26:57,278:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/88c66e65a21f7d0e0744.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,280:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/4dd6211836a11790ef0a.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,282:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/722457943e5e2f545d8d.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,530:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /api/v1/dataset/?q=(columns:!(id,table_name,datasource_type,database.database_name,schema),filters:!((col:table_name,opr:eq,value:student_consume_level)),order_column:table_name,order_direction:asc,page:0,page_size:1) HTTP/1.1" 200 -
+2026-06-22 21:26:57,822:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/3598ed21cea95aee5832.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,852:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/5483f83eddaddee7cdc3.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,874:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/3d666faa3fa88d8dec24.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:26:57,901:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/thumbnail.4a9b5e62.png HTTP/1.1" 200 -
+2026-06-22 21:26:57,932:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/thumbnail.0be12067.png HTTP/1.1" 200 -
+2026-06-22 21:26:57,942:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/thumbnail.ee528db4.png HTTP/1.1" 200 -
+2026-06-22 21:26:57,946:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/thumbnail.1a9ace38.png HTTP/1.1" 200 -
+2026-06-22 21:26:57,962:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:57] "GET /static/assets/thumbnail.a924bed4.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,012:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.f2cfa9c4.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,015:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.60104e6d.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,045:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.154cdccd.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,061:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.a463d279.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,093:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.8d7d3cbe.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,130:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.c2670397.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,152:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.50c780c0.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,152:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.b751c252.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,156:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.d2ebb8b7.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,158:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.22e46caa.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,166:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.3b5aef49.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,173:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.241865fc.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,201:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.0cdc0470.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,202:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.9506c7f0.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,203:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.2ec285ca.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,207:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.8e8858da.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,228:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "GET /static/assets/thumbnail.f5779edd.png HTTP/1.1" 200 -
+2026-06-22 21:26:58,367:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:26:58] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:27:31,203:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.9d4c8d11.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,203:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.5ec3e6bd.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,207:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.d29dbe85.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,221:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.b0251af6.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,211:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.0fd3ce37.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,249:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.ab8113ee.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,275:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.e8cd4936.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,284:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.1e4e5b08.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,285:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.0bdf08a4.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,285:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.fa7923e8.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,289:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.e9235c2d.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,296:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.c501c39d.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,302:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.92b5826e.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,310:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.5d5ddfcc.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,340:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.394cbcc9.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,361:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.6a0f4c32.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,361:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.b290682b.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,368:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.2b21fc4a.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,385:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.6b7ac120.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,394:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.f6ecb617.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,410:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.652ad50f.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,436:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.ab750ae6.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,436:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.9905c92f.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,438:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.76dd9cc1.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,439:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.f2d16e54.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,464:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.e3f36081.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,469:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.94dfb10d.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,487:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.b627d1a4.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,500:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.e556fb5f.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,503:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.ea1ff627.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,523:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.aa9710fc.png HTTP/1.1" 200 -
+2026-06-22 21:27:31,528:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:31] "GET /static/assets/thumbnail.a55df64a.png HTTP/1.1" 200 -
+2026-06-22 21:27:37,262:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:37] "GET /static/assets/Bar1.05db33fe.png HTTP/1.1" 200 -
+2026-06-22 21:27:37,263:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:37] "GET /static/assets/Bar2.c41826d8.png HTTP/1.1" 200 -
+2026-06-22 21:27:37,264:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:37] "GET /static/assets/Bar3.0ace6ce6.png HTTP/1.1" 200 -
+2026-06-22 21:27:39,988:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:39] "GET /static/assets/64278a6b5d79e06d59e7.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,026:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/dcf461e9e129c345e980.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,043:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/3dbc09f150c73665169c.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,055:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/858a8ed0ab46cfe5187b.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,075:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/DashboardContainer.99bc3e1652b09419e20c.chunk.css HTTP/1.1" 200 -
+2026-06-22 21:27:40,077:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/67f9b3d6b9840fdc21ac.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,076:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/e96f17ea0cf4e393f72f.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,076:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/54df1b26d2f6179ba40d.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,098:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/b948feda196ac28f26ed.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,103:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/bc912ed2d996d966bf33.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,104:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/e32b897be9cbfcc3e1eb.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,112:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/e5741290f2549a376f8e.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,151:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/4fb14b890c096e4948ee.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,152:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/88.5ff0a59a88e2c9038ade.entry.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,160:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/31de3dd70d56adf8a1ad.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,164:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/ae9cde3b59cfeaa1a0fa.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,194:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/7e6e5031a28b6756a45f.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,208:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/6ace89c7589e95bb35ea.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,218:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/99bc3e1652b09419e20c.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,218:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/a3c2aa10c7a9115b09e6.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,231:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/Chart.716fb6bea873e3864f1e.chunk.css HTTP/1.1" 200 -
+2026-06-22 21:27:40,296:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /static/assets/716fb6bea873e3864f1e.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:40,835:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:40] "GET /api/v1/explore/?viz_type=echarts_timeseries_bar&datasource_id=1&datasource_type=table HTTP/1.1" 200 -
+2026-06-22 21:27:41,112:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:41] "GET /static/assets/2b13cc93b07c41b27134.woff2 HTTP/1.1" 200 -
+2026-06-22 21:27:41,127:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:41] "GET /static/assets/adde41cc8b392f521bf7.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:41,254:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:41] "GET /static/assets/e78997a073d558296806.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:41,254:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:41] "GET /static/assets/7cb2bc7566bc4052daa7.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:27:41,338:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:41] "GET /api/v1/database/1/table_metadata/extra/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 21:27:42,179:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:42] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:27:42,331:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:42] "[35m[1mPOST /api/v1/explore/form_data?tab_id=1 HTTP/1.1[0m" 201 -
+2026-06-22 21:27:47,741:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:47] "GET /api/v1/dataset/?q=(columns:!(id,table_name,datasource_type,database.database_name,schema),filters:!((col:table_name,opr:eq,value:student_consume_level)),order_column:table_name,order_direction:asc,page:0,page_size:1) HTTP/1.1" 200 -
+2026-06-22 21:27:48,614:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:27:48] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:28:19,627:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:28:19] "GET /api/v1/explore/?viz_type=echarts_timeseries_bar&datasource_id=1&datasource_type=table HTTP/1.1" 200 -
+2026-06-22 21:28:20,001:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:28:20] "GET /api/v1/database/1/table_metadata/extra/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 21:28:20,871:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:28:20] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:28:21,005:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:28:21] "[35m[1mPOST /api/v1/explore/form_data?tab_id=1 HTTP/1.1[0m" 201 -
+2026-06-22 21:28:39,439:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:28:39] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:30:50,465:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:30:50] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:31:01,874:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:01] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:31:03,535:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:03] "GET /static/assets/9e7880a4d984f1f1f4b1.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:31:04,306:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:04] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 21:31:04,404:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:04] "GET /static/assets/9fdeaa1255418845236f.chunk.js HTTP/1.1" 200 -
+2026-06-22 21:31:05,113:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:05] "GET /static/assets/69a8d1d484967aba2389.woff2 HTTP/1.1" 200 -
+2026-06-22 21:31:05,164:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:05] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 21:31:05,394:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:05] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:31:36,763:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:36] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:31:37,914:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:37] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 21:31:38,531:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:38] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 21:31:39,098:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:31:39] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:33:13,656:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:33:13] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:33:20,483:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:33:20] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:33:21,302:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:33:21] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 21:33:22,148:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:33:22] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 21:33:22,328:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:33:22] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:53:45,729:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:45] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 21:53:47,799:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:47] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 21:53:48,211:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:48] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 21:53:48,882:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:48] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:53:58,392:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:58] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 21:53:59,391:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:53:59] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 21:54:00,034:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:54:00] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 21:54:00,428:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 21:54:00] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:08:42,035:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:08:42] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 22:08:48,709:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:08:48] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 22:08:49,250:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:08:49] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 22:08:49,805:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:08:49] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:27:59,934:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:27:59] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 22:28:20,787:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:20] "GET /static/assets/6785efa87992d2db7c33.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:20,790:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:20] "GET /static/assets/c9b4f7715bdab49277b6.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:20,802:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:20] "GET /static/assets/17affe0589a5fa236d84.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:20,936:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:20] "GET /static/assets/d55691c9f7a1b30bbfa1.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:21,244:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:21] "GET /static/assets/6b3a79992ba29cadd573.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:21,270:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:21] "GET /static/assets/6f2c381c6b323811509a.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:21,286:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:21] "GET /static/assets/6fb04fbaa8e92bc2f1bb.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:21,311:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:21] "GET /static/assets/784cab3b2fa104cb2e8a.chunk.js HTTP/1.1" 200 -
+2026-06-22 22:28:21,799:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:28:21] "GET /static/assets/45199eea8828315083bf.woff2 HTTP/1.1" 200 -
+2026-06-22 22:36:22,541:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:22] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 22:36:37,763:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 22:36:37,911:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:37] "GET /explore/?form_data_key=X3j5ieL3CHI&viz_type=echarts_timeseries_bar&datasource=1__table&datasource_id=1&datasource_type=table HTTP/1.1" 200 -
+2026-06-22 22:36:40,941:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:40] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 22:36:40,955:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:40] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-22 22:36:41,118:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:41] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:36:41,312:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:41] "GET /api/v1/explore/?form_data_key=X3j5ieL3CHI&viz_type=echarts_timeseries_bar&datasource_id=1&datasource_type=table HTTP/1.1" 200 -
+2026-06-22 22:36:42,126:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:42] "GET /api/v1/database/1/table_metadata/extra/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 22:36:42,523:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:42] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 22:36:43,170:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:43] "[35m[1mPOST /api/v1/explore/form_data?tab_id=1 HTTP/1.1[0m" 201 -
+2026-06-22 22:36:43,729:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:43] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:36:48,361:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:48] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 22:36:48,829:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:48] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 22:36:49,460:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:36:49] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:37:04,976:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:37:04] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:37:05,610:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:37:05] "POST /api/v1/chart/data HTTP/1.1" 200 -
+2026-06-22 22:37:05,943:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:37:05] "PUT /api/v1/explore/form_data/X3j5ieL3CHI?tab_id=1 HTTP/1.1" 200 -
+2026-06-22 22:37:06,729:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:37:06] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 22:45:15,550:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 22:45:15] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 23:19:16,699:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:19:16] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-22 23:19:43,411:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:19:43] "GET /static/assets/d612f186e2f08629ff9e.chunk.js HTTP/1.1" 200 -
+2026-06-22 23:19:43,432:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:19:43] "GET /static/assets/b71c612f17091bf43e25.chunk.js HTTP/1.1" 200 -
+2026-06-22 23:19:43,438:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:19:43] "GET /static/assets/5997389499620c119d7f.chunk.js HTTP/1.1" 200 -
+2026-06-22 23:21:27,007:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:27] "GET /api/v1/explore/ HTTP/1.1" 200 -
+2026-06-22 23:21:27,271:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:27] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:ct,value:'')),order_column:database_name,order_direction:asc,page:0,page_size:100) HTTP/1.1" 200 -
+2026-06-22 23:21:27,974:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:27] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 23:21:30,256:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:30] "GET /api/v1/database/1/schemas/?q=(force:!f) HTTP/1.1" 200 -
+2026-06-22 23:21:34,087:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:34] "GET /api/v1/dataset/?q=(filters:!((col:database,opr:rel_o_m,value:1),(col:schema,opr:eq,value:card_analysis),(col:sql,opr:dataset_is_null_or_empty,value:!t)),page:0) HTTP/1.1" 200 -
+2026-06-22 23:21:34,382:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:34] "GET /api/v1/database/1/tables/?q=(force:!f,schema_name:card_analysis) HTTP/1.1" 200 -
+2026-06-22 23:21:36,786:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:36] "GET /api/v1/database/1/table_metadata/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 23:21:44,556:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-22 23:21:44,590:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:44] "GET /explore/?datasource_type=table&datasource_id=1 HTTP/1.1" 200 -
+2026-06-22 23:21:46,048:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:46] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-22 23:21:46,057:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:46] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-22 23:21:46,720:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:46] "GET /api/v1/explore/?datasource_type=table&datasource_id=1 HTTP/1.1" 200 -
+2026-06-22 23:21:46,737:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:46] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 23:21:47,214:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:47] "GET /api/v1/database/1/table_metadata/extra/?name=student_consume_level&schema=card_analysis HTTP/1.1" 200 -
+2026-06-22 23:21:48,071:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:48] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-22 23:21:48,198:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:48] "[35m[1mPOST /api/v1/explore/form_data?tab_id=2 HTTP/1.1[0m" 201 -
+2026-06-22 23:21:51,877:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:51] "PUT /api/v1/explore/form_data/OT4sAdLbIXM?tab_id=2 HTTP/1.1" 200 -
+2026-06-22 23:21:55,682:INFO:werkzeug:127.0.0.1 - - [22/Jun/2026 23:21:55] "POST /superset/log/?explode=events HTTP/1.1" 200 -

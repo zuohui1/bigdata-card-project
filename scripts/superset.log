@@ -1,0 +1,174 @@
+nohup: 忽略输入
+Loaded your LOCAL configuration at [/home/zuohui/spark_venv/bin/superset_config.py]
+2026-06-23 15:12:03,482:INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+2026-06-23 15:12:03,483:INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+2026-06-23 15:12:03,961:INFO:superset.app:Syncing configuration to database...
+2026-06-23 15:12:03,972:INFO:superset.app:Configuration sync to database completed successfully
+2026-06-23 15:12:05,011:INFO:superset.core.mcp.core_mcp_injection:fastmcp is not installed, skipping MCP initialization. Install it with: pip install 'apache-superset[fastmcp]'
+ * Debug mode: off
+2026-06-23 15:12:05,015:INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.32.129:8081
+2026-06-23 15:12:05,015:INFO:werkzeug:[33mPress CTRL+C to quit[0m
+2026-06-23 15:12:55,184:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-23 15:12:55,559:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:55] "GET /superset/dashboard/2/?native_filters_key=Uy9uGB3OyLc HTTP/1.1" 200 -
+2026-06-23 15:12:56,019:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:56] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 200 -
+2026-06-23 15:12:56,021:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:56] "[36mGET /static/assets/8706.6dfab372988d20453152.entry.css HTTP/1.1[0m" 304 -
+2026-06-23 15:12:58,766:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:58] "GET /static/assets/images/superset-logo-horiz.png HTTP/1.1" 200 -
+2026-06-23 15:12:58,839:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:58] "[36mGET /static/assets/eca1e21531598d5db58f.woff2 HTTP/1.1[0m" 304 -
+2026-06-23 15:12:59,160:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:59] "GET /api/v1/dashboard/2/filter_state/Uy9uGB3OyLc HTTP/1.1" 200 -
+2026-06-23 15:12:59,306:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:12:59] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:13:00,512:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:00] "[36mGET /static/assets/b7c27c60f848f2083f45.woff2 HTTP/1.1[0m" 304 -
+2026-06-23 15:13:00,708:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:00] "POST /superset/log/?explode=events&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:13:13,451:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:13] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-23 15:13:13,561:WARNING:root:Failed to add user to db session: Class 'werkzeug.local.LocalProxy' is not mapped
+2026-06-23 15:13:13,594:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:13] "[32mGET /superset/welcome/ HTTP/1.1[0m" 302 -
+2026-06-23 15:13:13,764:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-23 15:13:13,780:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:13] "GET /login/?next=/superset/welcome/ HTTP/1.1" 200 -
+2026-06-23 15:13:14,085:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/8706.6dfab372988d20453152.entry.css HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,116:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "GET /static/appbuilder/css/flags/flags16.css HTTP/1.1" 200 -
+2026-06-23 15:13:14,151:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/theme.5d27e91c941caf51f4a7.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,171:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/thumbnail.824b899f1b7b91c556af.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,208:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/5037.d56aa78e5779995d016c.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,210:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/6934.9afbba59e4bb25c0c44e.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,256:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/180.4f9024017a377ac30f78.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,291:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/2795.af7b90bb1b1f9b21e098.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,303:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/1203.a1e986c5d8f5a4c4375a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,303:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/3185.f10541918219d72b470f.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,341:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/952.fcf16880ee68d8064d11.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,345:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/6707.35038bbaa024309b7dd8.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,347:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/2290.4aef28ca85361c2fdbd3.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,405:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/1541.56876400fc511af10839.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,426:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/8085.4bc9b7059e85ba458bcb.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,435:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/8115.535b4174a7ea7a91d01a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,438:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/616.94c331d4202698eb2aa9.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,460:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/spa.3c707e777337bc9d8e88.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,464:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/8706.6dfab372988d20453152.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,479:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/9059.b2f889ad23bd80f99e2a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,503:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/vendors.6f4ecbc3d2e23e236060.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,517:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/7634.0acd07e01787179c928e.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:14,823:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:14] "[36mGET /static/assets/images/favicon.png HTTP/1.1[0m" 304 -
+2026-06-23 15:13:15,661:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:15] "[36mGET /static/assets/c6db7a32d1cde8f8f515.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:15,679:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:15] "GET /static/assets/images/superset-logo-horiz.png HTTP/1.1" 200 -
+2026-06-23 15:13:15,736:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:15] "[36mGET /static/assets/eca1e21531598d5db58f.woff2 HTTP/1.1[0m" 304 -
+2026-06-23 15:13:15,926:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:15] "[36mGET /static/assets/b7c27c60f848f2083f45.woff2 HTTP/1.1[0m" 304 -
+2026-06-23 15:13:16,726:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:16] "[32mPOST /superset/log/?explode=events HTTP/1.1[0m" 302 -
+2026-06-23 15:13:16,928:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-23 15:13:16,942:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:16] "GET /login/?next=http://127.0.0.1:8081/superset/log/?explode%3Devents HTTP/1.1" 200 -
+2026-06-23 15:13:42,036:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[32mPOST /login/?next=/superset/welcome/ HTTP/1.1[0m" 302 -
+2026-06-23 15:13:42,198:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/home/zuohui/spark_venv/lib/python3.12/site-packages/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+2026-06-23 15:13:42,210:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "GET /superset/welcome/ HTTP/1.1" 200 -
+2026-06-23 15:13:42,359:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/1203.a1e986c5d8f5a4c4375a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,368:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/theme.5d27e91c941caf51f4a7.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,383:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/3185.f10541918219d72b470f.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,368:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/thumbnail.824b899f1b7b91c556af.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,404:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/952.fcf16880ee68d8064d11.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,423:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/5037.d56aa78e5779995d016c.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,428:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/1541.56876400fc511af10839.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,465:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/7634.0acd07e01787179c928e.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,476:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/616.94c331d4202698eb2aa9.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,495:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/2290.4aef28ca85361c2fdbd3.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,505:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/180.4f9024017a377ac30f78.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,512:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/6707.35038bbaa024309b7dd8.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,513:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/6934.9afbba59e4bb25c0c44e.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,531:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/8115.535b4174a7ea7a91d01a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,554:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/2795.af7b90bb1b1f9b21e098.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,568:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/9059.b2f889ad23bd80f99e2a.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,573:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/spa.3c707e777337bc9d8e88.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,585:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/8085.4bc9b7059e85ba458bcb.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,590:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/8706.6dfab372988d20453152.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,593:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/vendors.6f4ecbc3d2e23e236060.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:13:42,743:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:42] "[36mGET /static/assets/images/favicon.png HTTP/1.1[0m" 304 -
+2026-06-23 15:13:43,982:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:43] "GET /api/v1/log/recent_activity/?q=(distinct:!f,page_size:24) HTTP/1.1" 200 -
+2026-06-23 15:13:44,536:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:44] "GET /api/v1/database/?q=(filters:!((col:allow_file_upload,opr:upload_is_enabled,value:!t))) HTTP/1.1" 200 -
+2026-06-23 15:13:44,636:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:44] "GET /api/v1/saved_query/?q=(filters:!((col:created_by,opr:rel_o_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:13:44,942:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:44] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:13:44,960:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:44] "GET /api/v1/database/?q=(filters:!((col:database_name,opr:neq,value:examples))) HTTP/1.1" 200 -
+2026-06-23 15:13:45,021:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/chart/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:13:45,029:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/dashboard/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:13:45,043:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/dashboard/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:13:45,073:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/chart/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:13:45,273:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:13:45,295:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:13:45,299:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:13:45,314:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:13:45] "GET /api/v1/chart/favorite_status/?q=!(4,3,2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:01,318:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:01] "[36mGET /static/assets/a52d634074273e6480d7.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:02,274:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:02] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:14:02,288:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:02] "GET /api/v1/dashboard/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25,select_columns:!(id,dashboard_title,published,url,slug,changed_by,changed_by.id,changed_by.first_name,changed_by.last_name,changed_on_delta_humanized,owners,owners.id,owners.first_name,owners.last_name,tags.id,tags.name,tags.type,status,certified_by,certification_details,changed_on)) HTTP/1.1" 200 -
+2026-06-23 15:14:02,642:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:02] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:02,676:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:02] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:14:06,441:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/ae41f571b493ba30512e.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,465:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/858a8ed0ab46cfe5187b.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,466:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/e5741290f2549a376f8e.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,513:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/3dbc09f150c73665169c.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,529:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/67f9b3d6b9840fdc21ac.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,543:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/dcf461e9e129c345e980.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,542:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/31de3dd70d56adf8a1ad.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,544:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/64278a6b5d79e06d59e7.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,595:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/DashboardContainer.99bc3e1652b09419e20c.chunk.css HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,621:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/7e6e5031a28b6756a45f.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,623:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/e96f17ea0cf4e393f72f.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,702:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/b948feda196ac28f26ed.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,703:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/ae9cde3b59cfeaa1a0fa.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,720:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/bc912ed2d996d966bf33.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,720:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/88.5ff0a59a88e2c9038ade.entry.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,755:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/4fb14b890c096e4948ee.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,801:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "[36mGET /static/assets/99bc3e1652b09419e20c.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:06,886:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "GET /api/v1/dashboard/2?q=(columns:!(id,slug,url,dashboard_title,published,css,theme,json_metadata,position_json,certified_by,certification_details,changed_by_name,changed_by,changed_on,created_by,charts,owners,roles,tags,changed_on_delta_humanized,created_on_delta_humanized,is_managed_externally,uuid)) HTTP/1.1" 200 -
+2026-06-23 15:14:06,935:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:06] "GET /api/v1/dashboard/2/charts HTTP/1.1" 200 -
+2026-06-23 15:14:07,475:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:07] "GET /api/v1/dashboard/2/datasets HTTP/1.1" 200 -
+2026-06-23 15:14:07,837:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:07] "GET /api/v1/dashboard/favorite_status/?q=!(2) HTTP/1.1" 200 -
+2026-06-23 15:14:08,305:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:08] "GET /api/v1/dataset/2/drill_info/?q=(dashboard_id:2) HTTP/1.1" 200 -
+2026-06-23 15:14:08,361:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:08] "GET /api/v1/dataset/1/drill_info/?q=(dashboard_id:2) HTTP/1.1" 200 -
+2026-06-23 15:14:08,484:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:08] "GET /api/v1/dataset/4/drill_info/?q=(dashboard_id:2) HTTP/1.1" 200 -
+2026-06-23 15:14:08,609:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:08] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:14:08,634:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:08] "[35m[1mPOST /api/v1/dashboard/2/filter_state?tab_id=3 HTTP/1.1[0m" 201 -
+2026-06-23 15:14:09,668:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "POST /api/v1/chart/data?form_data={"slice_id":1}&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:09,685:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "POST /api/v1/chart/data?form_data={"slice_id":4}&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:09,707:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "POST /api/v1/chart/data?form_data={"slice_id":3}&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:09,722:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "POST /api/v1/chart/data?form_data={"slice_id":2}&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:09,823:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "[36mGET /static/assets/05addb45f9966def4730.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:09,831:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "[36mGET /static/assets/1994613084a91700cdea.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:09,850:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "[36mGET /static/assets/e32b897be9cbfcc3e1eb.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:09,913:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "[36mGET /static/assets/2fcfc38ba19709f70a42.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:09,965:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:09] "[36mGET /static/assets/9fdeaa1255418845236f.chunk.js HTTP/1.1[0m" 304 -
+2026-06-23 15:14:10,151:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:10] "[36mGET /static/assets/69a8d1d484967aba2389.woff2 HTTP/1.1[0m" 304 -
+2026-06-23 15:14:11,175:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:11] "POST /superset/log/?explode=events&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:27,200:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:27] "GET /api/v1/me/ HTTP/1.1" 200 -
+2026-06-23 15:14:28,198:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:28] "POST /superset/log/?explode=events&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:32,150:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:32] "GET /api/v1/dashboard/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25,select_columns:!(id,dashboard_title,published,url,slug,changed_by,changed_by.id,changed_by.first_name,changed_by.last_name,changed_on_delta_humanized,owners,owners.id,owners.first_name,owners.last_name,tags.id,tags.name,tags.type,status,certified_by,certification_details,changed_on)) HTTP/1.1" 200 -
+2026-06-23 15:14:32,156:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:32] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:14:32,429:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:32] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:33,041:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:33] "POST /superset/log/?explode=events&dashboard_id=2 HTTP/1.1" 200 -
+2026-06-23 15:14:34,260:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/log/recent_activity/?q=(distinct:!f,page_size:24) HTTP/1.1" 200 -
+2026-06-23 15:14:34,404:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/saved_query/?q=(filters:!((col:created_by,opr:rel_o_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:14:34,801:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/dashboard/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:14:34,913:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/chart/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:14:34,924:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/dashboard/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:14:34,934:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:34] "GET /api/v1/chart/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:14:35,077:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:35] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:35,087:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:35] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:14:35,159:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:35] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:14:36,537:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:36] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:14:36,542:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:36] "GET /api/v1/chart/favorite_status/?q=!(4,3,2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:38,354:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:38] "GET /static/assets/e8e6edb6814e35a5bc83.chunk.js HTTP/1.1" 200 -
+2026-06-23 15:14:38,671:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:38] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:14:38,723:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:38] "GET /api/v1/chart/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25) HTTP/1.1" 200 -
+2026-06-23 15:14:39,083:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:39] "GET /api/v1/chart/favorite_status/?q=!(4,3,2,1) HTTP/1.1" 200 -
+2026-06-23 15:14:39,354:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:14:39] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:15:03,601:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:03] "GET /api/v1/log/recent_activity/?q=(distinct:!f,page_size:24) HTTP/1.1" 200 -
+2026-06-23 15:15:03,887:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:03] "GET /api/v1/saved_query/?q=(filters:!((col:created_by,opr:rel_o_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:15:04,055:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/dashboard/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:15:04,114:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/dashboard/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:15:04,128:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/chart/?q=(filters:!((col:owners,opr:rel_m_m,value:'1')),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:15:04,138:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/chart/?q=(filters:!(),order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:5) HTTP/1.1" 200 -
+2026-06-23 15:15:04,406:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/chart/favorite_status/?q=!(4,3,2,1) HTTP/1.1" 200 -
+2026-06-23 15:15:04,420:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/chart/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:15:04,428:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:15:04,448:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:15:04,506:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:04] "POST /superset/log/?explode=events HTTP/1.1" 200 -
+2026-06-23 15:15:09,944:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:09] "GET /api/v1/dashboard/_info?q=(keys:!(permissions)) HTTP/1.1" 200 -
+2026-06-23 15:15:09,964:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:09] "GET /api/v1/dashboard/?q=(order_column:changed_on_delta_humanized,order_direction:desc,page:0,page_size:25,select_columns:!(id,dashboard_title,published,url,slug,changed_by,changed_by.id,changed_by.first_name,changed_by.last_name,changed_on_delta_humanized,owners,owners.id,owners.first_name,owners.last_name,tags.id,tags.name,tags.type,status,certified_by,certification_details,changed_on)) HTTP/1.1" 200 -
+2026-06-23 15:15:10,276:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:10] "GET /api/v1/dashboard/favorite_status/?q=!(2,1) HTTP/1.1" 200 -
+2026-06-23 15:15:10,737:INFO:werkzeug:127.0.0.1 - - [23/Jun/2026 15:15:10] "POST /superset/log/?explode=events&dashboard_id=2 HTTP/1.1" 200 -

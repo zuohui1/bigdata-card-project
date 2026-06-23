@@ -1,0 +1,282 @@
+==================== 开始部署Apache Superset ====================
+日志文件：./superset_install_20260622_2110.log
+
+【1/5】安装系统编译依赖
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+命中:1 https://mirrors.aliyun.com/ubuntu noble InRelease
+命中:2 https://mirrors.aliyun.com/ubuntu noble-updates InRelease
+命中:3 https://mirrors.aliyun.com/ubuntu noble-security InRelease
+命中:4 https://mirrors.aliyun.com/ubuntu noble-backports InRelease
+命中:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+命中:6 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+命中:7 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+命中:8 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+有 80 个软件包可以升级。请执行 ‘apt list --upgradable’ 来查看它们。
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+build-essential 已经是最新版 (12.10ubuntu1)。
+libssl-dev 已经是最新版 (3.0.13-0ubuntu3.11)。
+libffi-dev 已经是最新版 (3.4.6-1build1)。
+python3-dev 已经是最新版 (3.12.3-0ubuntu2.1)。
+python3-venv 已经是最新版 (3.12.3-0ubuntu2.1)。
+libsasl2-dev 已经是最新版 (2.1.28+dfsg1-5ubuntu3.1)。
+libldap2-dev 已经是最新版 (2.6.10+dfsg-0ubuntu0.24.04.1)。
+libpq-dev 已经是最新版 (16.14-0ubuntu0.24.04.1)。
+pkg-config 已经是最新版 (1.8.1-2build1)。
+libmysqlclient-dev 已经是最新版 (8.0.46-0ubuntu0.24.04.2)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 80 个软件包未被升级。
+
+【2/5】激活spark_venv虚拟环境
+当前Python路径：/home/zuohui/spark_venv/bin/python3
+
+【3/5】清理损坏缓存与残缺旧包
+Files removed: 27 (106.0 MB)
+Directories removed: 5
+Found existing installation: apache_superset 6.1.0
+Uninstalling apache_superset-6.1.0:
+  Successfully uninstalled apache_superset-6.1.0
+Found existing installation: apache-superset-core 0.1.0
+Uninstalling apache-superset-core-0.1.0:
+  Successfully uninstalled apache-superset-core-0.1.0
+Found existing installation: mysqlclient 2.2.8
+Uninstalling mysqlclient-2.2.8:
+  Successfully uninstalled mysqlclient-2.2.8
+Found existing installation: happybase 1.3.0
+Uninstalling happybase-1.3.0:
+  Successfully uninstalled happybase-1.3.0
+Requirement already satisfied: pip in /home/zuohui/spark_venv/lib/python3.12/site-packages (26.1.2)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pip/
+Requirement already satisfied: setuptools in /home/zuohui/spark_venv/lib/python3.12/site-packages (82.0.1)
+Requirement already satisfied: wheel in /home/zuohui/spark_venv/lib/python3.12/site-packages (0.47.0)
+Requirement already satisfied: packaging>=24.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from wheel) (26.2)
+
+【4/5】完整安装Superset依赖，请勿中途按Ctrl+C中断！预计10~20分钟
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting apache-superset
+  Downloading apache_superset-6.1.0-py3-none-any.whl (103.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.8/103.8 MB 16.0 MB/s  0:00:06
+Collecting mysqlclient
+  Downloading mysqlclient-2.2.8.tar.gz (92 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting happybase
+  Downloading happybase-1.3.0-py2.py3-none-any.whl (26 kB)
+Collecting apache-superset-core (from apache-superset)
+  Downloading apache_superset_core-0.1.0-py3-none-any.whl (37 kB)
+Requirement already satisfied: backoff>=1.8.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.2.1)
+Requirement already satisfied: celery<6.0.0,>=5.3.6 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (5.6.3)
+Requirement already satisfied: click>=8.0.3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (8.4.1)
+Requirement already satisfied: click-option-group in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.5.9)
+Requirement already satisfied: colorama in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.4.6)
+Requirement already satisfied: flask-cors<7.0,>=6.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (6.0.5)
+Requirement already satisfied: croniter>=0.3.28 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (6.2.2)
+Requirement already satisfied: cron-descriptor in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.1.0)
+Requirement already satisfied: cryptography<47.0.0,>=42.0.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (46.0.7)
+Requirement already satisfied: deprecation<2.2.0,>=2.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.1.0)
+Requirement already satisfied: flask<4.0.0,>=2.2.5 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.1.3)
+Requirement already satisfied: flask-appbuilder<6,>=5.0.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (5.2.1)
+Requirement already satisfied: flask-caching<3,>=2.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.4.0)
+Requirement already satisfied: flask-compress<2.0,>=1.13 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.24)
+Requirement already satisfied: flask-talisman<2.0,>=1.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.1.0)
+Requirement already satisfied: flask-login<1.0,>=0.6.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.6.3)
+Requirement already satisfied: flask-migrate<4.0,>=3.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.1.0)
+Requirement already satisfied: flask-session<1.0,>=0.4.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.8.0)
+Requirement already satisfied: flask-wtf<2.0,>=1.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.3.0)
+Requirement already satisfied: geopy in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.4.1)
+Requirement already satisfied: greenlet<=3.1.1,>=3.0.3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.1.1)
+Requirement already satisfied: gunicorn>=22.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (26.0.0)
+Requirement already satisfied: hashids<2,>=1.3.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.3.1)
+Requirement already satisfied: holidays<1,>=0.45 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.99)
+Requirement already satisfied: humanize in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (4.15.0)
+Requirement already satisfied: isodate in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.7.2)
+Requirement already satisfied: jsonpath-ng<2,>=1.6.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.8.0)
+Requirement already satisfied: Mako>=1.2.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.3.12)
+Requirement already satisfied: markdown>=3.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.10.2)
+Requirement already satisfied: marshmallow<4,>=3.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.26.2)
+Requirement already satisfied: marshmallow-union>=0.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.1.15.post1)
+Requirement already satisfied: msgpack<1.1,>=1.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.0.8)
+Requirement already satisfied: nh3<0.3,>=0.2.11 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.2.22)
+Requirement already satisfied: numpy<2.3,>1.23.5 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.26.4)
+Requirement already satisfied: packaging in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (26.2)
+Requirement already satisfied: pandas<2.2,>=2.1.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas[excel]<2.2,>=2.1.4->apache-superset) (2.1.4)
+Requirement already satisfied: bottleneck in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.6.0)
+Requirement already satisfied: parsedatetime in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.6)
+Requirement already satisfied: paramiko>=3.4.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (5.0.0)
+Requirement already satisfied: pgsanity in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.3.0)
+Requirement already satisfied: Pillow<13,>=11.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (12.2.0)
+Requirement already satisfied: polyline<3.0,>=2.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.0.4)
+Requirement already satisfied: pydantic>=2.8.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.13.4)
+Requirement already satisfied: pyparsing<4,>=3.0.6 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.3.2)
+Requirement already satisfied: python-dateutil in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.9.0.post0)
+Requirement already satisfied: python-dotenv in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.2.2)
+Requirement already satisfied: pygeohash in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.3.0)
+Requirement already satisfied: pyarrow<19,>=16.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (18.1.0)
+Requirement already satisfied: pyyaml<7.0.0,>=6.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (6.0.3)
+Requirement already satisfied: PyJWT<3.0,>=2.4.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (2.13.0)
+Requirement already satisfied: redis<6.0,>=5.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (5.3.1)
+Requirement already satisfied: selenium<5.0,>=4.14.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (4.45.0)
+Requirement already satisfied: shillelagh<2.0,>=1.4.3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (1.4.4)
+Requirement already satisfied: sshtunnel<0.5,>=0.4.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.4.0)
+Requirement already satisfied: simplejson>=3.15.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (4.1.1)
+Requirement already satisfied: slack_sdk<4,>=3.19.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.42.0)
+Requirement already satisfied: sqlalchemy<2,>=1.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (1.4.54)
+Requirement already satisfied: sqlalchemy-utils<0.43,>=0.38.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.42.1)
+Requirement already satisfied: sqlglot<29,>=28.10.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (28.10.1)
+Requirement already satisfied: tabulate<1.0,>=0.9.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.10.0)
+Requirement already satisfied: typing-extensions<5,>=4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (4.15.0)
+Requirement already satisfied: watchdog>=6.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (6.0.0)
+Requirement already satisfied: wtforms<4,>=2.3.3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.2.2)
+Requirement already satisfied: wtforms-json in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (0.3.5)
+Requirement already satisfied: xlsxwriter<3.1,>=3.0.7 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apache-superset) (3.0.9)
+Requirement already satisfied: billiard<5.0,>=4.2.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (4.2.4)
+Requirement already satisfied: kombu>=5.6.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (5.6.2)
+Requirement already satisfied: vine<6.0,>=5.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (5.1.0)
+Requirement already satisfied: click-didyoumean>=0.3.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (0.3.1)
+Requirement already satisfied: click-repl>=0.2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (0.3.0)
+Requirement already satisfied: click-plugins>=1.1.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (1.1.1.2)
+Requirement already satisfied: tzlocal in /home/zuohui/spark_venv/lib/python3.12/site-packages (from celery<6.0.0,>=5.3.6->apache-superset) (5.4.3)
+Requirement already satisfied: cffi>=2.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from cryptography<47.0.0,>=42.0.4->apache-superset) (2.0.0)
+Requirement already satisfied: blinker>=1.9.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask<4.0.0,>=2.2.5->apache-superset) (1.9.0)
+Requirement already satisfied: itsdangerous>=2.2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask<4.0.0,>=2.2.5->apache-superset) (2.2.0)
+Requirement already satisfied: jinja2>=3.1.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask<4.0.0,>=2.2.5->apache-superset) (3.1.6)
+Requirement already satisfied: markupsafe>=2.1.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask<4.0.0,>=2.2.5->apache-superset) (3.0.3)
+Requirement already satisfied: werkzeug>=3.1.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask<4.0.0,>=2.2.5->apache-superset) (3.1.8)
+Requirement already satisfied: apispec<7,>=6.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from apispec[yaml]<7,>=6.0.0->flask-appbuilder<6,>=5.0.2->apache-superset) (6.10.0)
+Requirement already satisfied: email-validator>=1.0.5 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (2.3.0)
+Requirement already satisfied: Flask-Babel<5,>=3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (4.0.0)
+Requirement already satisfied: Flask-Limiter<4,>3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (3.12)
+Requirement already satisfied: Flask-SQLAlchemy<4,>=2.4.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (3.0.5)
+Requirement already satisfied: Flask-JWT-Extended<5.0.0,>=4.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (4.7.4)
+Requirement already satisfied: jsonschema<5,>=3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (4.26.0)
+Requirement already satisfied: marshmallow-sqlalchemy<3.0.0,>=0.22.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (1.5.0)
+Requirement already satisfied: prison<1.0.0,>=0.2.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-appbuilder<6,>=5.0.2->apache-superset) (0.2.1)
+Requirement already satisfied: Babel>=2.12 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from Flask-Babel<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (2.18.0)
+Requirement already satisfied: pytz>=2022.7 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from Flask-Babel<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (2026.2)
+Requirement already satisfied: cachelib>=0.9.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-caching<3,>=2.1.0->apache-superset) (0.14.0)
+Requirement already satisfied: brotli in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-compress<2.0,>=1.13->apache-superset) (1.2.0)
+Requirement already satisfied: backports.zstd in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-compress<2.0,>=1.13->apache-superset) (1.6.0)
+Requirement already satisfied: limits>=3.13 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (5.8.0)
+Requirement already satisfied: ordered-set<5,>4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (4.1.0)
+Requirement already satisfied: rich<14,>=12 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (13.9.4)
+Requirement already satisfied: alembic>=0.7 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-migrate<4.0,>=3.1.0->apache-superset) (1.18.4)
+Requirement already satisfied: msgspec>=0.18.6 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from flask-session<1.0,>=0.4.0->apache-superset) (0.21.1)
+Requirement already satisfied: attrs>=22.2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from jsonschema<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from jsonschema<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from jsonschema<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from jsonschema<5,>=3->flask-appbuilder<6,>=5.0.2->apache-superset) (2026.5.1)
+Requirement already satisfied: tzdata>=2022.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas<2.2,>=2.1.4->pandas[excel]<2.2,>=2.1.4->apache-superset) (2026.2)
+Requirement already satisfied: odfpy>=1.4.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas[excel]<2.2,>=2.1.4->apache-superset) (1.4.1)
+Requirement already satisfied: openpyxl>=3.0.10 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas[excel]<2.2,>=2.1.4->apache-superset) (3.1.5)
+Requirement already satisfied: pyxlsb>=1.0.9 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas[excel]<2.2,>=2.1.4->apache-superset) (1.0.10)
+Requirement already satisfied: xlrd>=2.0.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pandas[excel]<2.2,>=2.1.4->apache-superset) (2.0.2)
+Requirement already satisfied: six in /home/zuohui/spark_venv/lib/python3.12/site-packages (from prison<1.0.0,>=0.2.1->flask-appbuilder<6,>=5.0.2->apache-superset) (1.17.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from rich<14,>=12->Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from rich<14,>=12->Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (2.20.0)
+Requirement already satisfied: certifi>=2026.2.25 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from selenium<5.0,>=4.14.0->apache-superset) (2026.6.17)
+Requirement already satisfied: trio<1.0,>=0.31.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from selenium<5.0,>=4.14.0->apache-superset) (0.33.0)
+Requirement already satisfied: trio-websocket<1.0,>=0.12.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from selenium<5.0,>=4.14.0->apache-superset) (0.12.2)
+Requirement already satisfied: urllib3<3.0,>=2.6.3 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from urllib3[socks]<3.0,>=2.6.3->selenium<5.0,>=4.14.0->apache-superset) (2.7.0)
+Requirement already satisfied: websocket-client<2.0,>=1.8.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from selenium<5.0,>=4.14.0->apache-superset) (1.9.0)
+Requirement already satisfied: apsw>=3.43.2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (3.53.2.0)
+Requirement already satisfied: requests>=2.31.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (2.34.2)
+Requirement already satisfied: requests-cache>=0.7.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (1.3.2)
+Requirement already satisfied: google-auth>=1.23.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (2.55.0)
+Requirement already satisfied: pyopenssl>=24.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (26.2.0)
+Requirement already satisfied: sortedcontainers in /home/zuohui/spark_venv/lib/python3.12/site-packages (from trio<1.0,>=0.31.0->selenium<5.0,>=4.14.0->apache-superset) (2.4.0)
+Requirement already satisfied: idna in /home/zuohui/spark_venv/lib/python3.12/site-packages (from trio<1.0,>=0.31.0->selenium<5.0,>=4.14.0->apache-superset) (3.18)
+Requirement already satisfied: outcome in /home/zuohui/spark_venv/lib/python3.12/site-packages (from trio<1.0,>=0.31.0->selenium<5.0,>=4.14.0->apache-superset) (1.3.0.post0)
+Requirement already satisfied: sniffio>=1.3.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from trio<1.0,>=0.31.0->selenium<5.0,>=4.14.0->apache-superset) (1.3.1)
+Requirement already satisfied: wsproto>=0.14 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from trio-websocket<1.0,>=0.12.2->selenium<5.0,>=4.14.0->apache-superset) (1.3.2)
+Requirement already satisfied: pysocks!=1.5.7,<2.0,>=1.5.6 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from urllib3[socks]<3.0,>=2.6.3->selenium<5.0,>=4.14.0->apache-superset) (1.7.1)
+Requirement already satisfied: thriftpy2>=0.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from happybase) (0.6.0)
+Requirement already satisfied: importlib-resources in /home/zuohui/spark_venv/lib/python3.12/site-packages (from happybase) (7.1.0)
+Requirement already satisfied: pycparser in /home/zuohui/spark_venv/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography<47.0.0,>=42.0.4->apache-superset) (3.0)
+Requirement already satisfied: prompt-toolkit>=3.0.36 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from click-repl>=0.2.0->celery<6.0.0,>=5.3.6->apache-superset) (3.0.52)
+Requirement already satisfied: dnspython>=2.0.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from email-validator>=1.0.5->flask-appbuilder<6,>=5.0.2->apache-superset) (2.8.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from google-auth>=1.23.0->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (0.4.2)
+Requirement already satisfied: amqp<6.0.0,>=5.1.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from kombu>=5.6.0->celery<6.0.0,>=5.3.6->apache-superset) (5.3.1)
+Requirement already satisfied: deprecated>=1.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from limits>=3.13->Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (1.3.1)
+Requirement already satisfied: wrapt<3,>=1.10 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from deprecated>=1.2->limits>=3.13->Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (2.2.2)
+Requirement already satisfied: mdurl~=0.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich<14,>=12->Flask-Limiter<4,>3->flask-appbuilder<6,>=5.0.2->apache-superset) (0.1.2)
+Requirement already satisfied: defusedxml in /home/zuohui/spark_venv/lib/python3.12/site-packages (from odfpy>=1.4.1->pandas[excel]<2.2,>=2.1.4->apache-superset) (0.7.1)
+Requirement already satisfied: et-xmlfile in /home/zuohui/spark_venv/lib/python3.12/site-packages (from openpyxl>=3.0.10->pandas[excel]<2.2,>=2.1.4->apache-superset) (2.0.0)
+Requirement already satisfied: bcrypt>=3.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from paramiko>=3.4.0->apache-superset) (5.0.0)
+Requirement already satisfied: invoke>=2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from paramiko>=3.4.0->apache-superset) (3.0.3)
+Requirement already satisfied: pynacl>=1.5 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from paramiko>=3.4.0->apache-superset) (1.6.2)
+Requirement already satisfied: wcwidth in /home/zuohui/spark_venv/lib/python3.12/site-packages (from prompt-toolkit>=3.0.36->click-repl>=0.2.0->celery<6.0.0,>=5.3.6->apache-superset) (0.8.1)
+Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pyasn1-modules>=0.2.1->google-auth>=1.23.0->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (0.6.3)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pydantic>=2.8.0->apache-superset) (0.7.0)
+Requirement already satisfied: pydantic-core==2.46.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pydantic>=2.8.0->apache-superset) (2.46.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from pydantic>=2.8.0->apache-superset) (0.4.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from requests>=2.31.0->shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (3.4.7)
+Requirement already satisfied: cattrs>=22.2 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from requests-cache>=0.7.1->shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (26.1.0)
+Requirement already satisfied: platformdirs>=2.5 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from requests-cache>=0.7.1->shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (4.10.0)
+Requirement already satisfied: url-normalize>=2.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from requests-cache>=0.7.1->shillelagh<2.0,>=1.4.3->shillelagh[gsheetsapi]<2.0,>=1.4.3->apache-superset) (3.0.0)
+Requirement already satisfied: ply<4.0,>=3.4 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from thriftpy2>=0.4->happybase) (3.11)
+Requirement already satisfied: h11<1,>=0.16.0 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from wsproto>=0.14->trio-websocket<1.0,>=0.12.2->selenium<5.0,>=4.14.0->apache-superset) (0.16.0)
+Requirement already satisfied: geographiclib<3,>=1.52 in /home/zuohui/spark_venv/lib/python3.12/site-packages (from geopy->apache-superset) (2.1)
+Building wheels for collected packages: mysqlclient
+  Building wheel for mysqlclient (pyproject.toml): started
+  Building wheel for mysqlclient (pyproject.toml): finished with status 'done'
+  Created wheel for mysqlclient: filename=mysqlclient-2.2.8-cp312-cp312-linux_x86_64.whl size=129528 sha256=93be6ba7cf74e5f7b0739cb09fd6df890a887c44f6155fc7a8920de442f46e61
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ss03hdv3/wheels/a9/f5/f3/7c85df761f635a0294836722d5ccf20af089bcb81c614cc038
+Successfully built mysqlclient
+Installing collected packages: mysqlclient, happybase, apache-superset-core, apache-superset
+
+Successfully installed apache-superset-6.1.0 apache-superset-core-0.1.0 happybase-1.3.0 mysqlclient-2.2.8
+
+【5/5】初始化Superset配置与数据库
+Loaded your LOCAL configuration at [/home/zuohui/spark_venv/bin/superset_config.py]
+2026-06-22 21:11:55,194:INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+2026-06-22 21:11:55,194:INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+2026-06-22 21:11:55,572:INFO:superset.app:Syncing configuration to database...
+2026-06-22 21:11:55,582:INFO:superset.app:Configuration sync to database completed successfully
+2026-06-22 21:11:56,428:INFO:superset.core.mcp.core_mcp_injection:fastmcp is not installed, skipping MCP initialization. Install it with: pip install 'apache-superset[fastmcp]'
+WARNI [alembic.env] SQLite Database support for metadata databases will         be removed in a future version of Superset.
+INFO  [alembic.env] Starting the migration scripts.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.env] Migration scripts completed. Duration: 00:00:00
+Loaded your LOCAL configuration at [/home/zuohui/spark_venv/bin/superset_config.py]
+2026-06-22 21:12:01,306:INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+2026-06-22 21:12:01,307:INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+2026-06-22 21:12:01,677:INFO:superset.app:Syncing configuration to database...
+2026-06-22 21:12:01,689:INFO:superset.app:Configuration sync to database completed successfully
+2026-06-22 21:12:02,481:INFO:superset.core.mcp.core_mcp_injection:fastmcp is not installed, skipping MCP initialization. Install it with: pip install 'apache-superset[fastmcp]'
+Recognized Database Authentications.
+Error! User already exists admin
+Loaded your LOCAL configuration at [/home/zuohui/spark_venv/bin/superset_config.py]
+2026-06-22 21:12:06,714:INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+2026-06-22 21:12:06,715:INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+2026-06-22 21:12:07,086:INFO:superset.app:Syncing configuration to database...
+2026-06-22 21:12:07,097:INFO:superset.app:Configuration sync to database completed successfully
+2026-06-22 21:12:07,883:INFO:superset.core.mcp.core_mcp_injection:fastmcp is not installed, skipping MCP initialization. Install it with: pip install 'apache-superset[fastmcp]'
+2026-06-22 21:12:12,236:INFO:superset.security.manager:Syncing role definition
+2026-06-22 21:12:12,364:INFO:superset.security.manager:Syncing Admin perms
+2026-06-22 21:12:12,370:INFO:superset.security.manager:Syncing Alpha perms
+2026-06-22 21:12:12,498:INFO:superset.security.manager:Syncing Gamma perms
+2026-06-22 21:12:12,621:INFO:superset.security.manager:Syncing sql_lab perms
+2026-06-22 21:12:12,738:INFO:superset.security.manager:Fetching a set of all perms to lookup which ones are missing
+2026-06-22 21:12:12,747:INFO:superset.security.manager:Creating missing datasource permissions.
+2026-06-22 21:12:12,754:INFO:superset.security.manager:Creating missing database permissions.
+2026-06-22 21:12:12,764:INFO:superset.security.manager:Cleaning faulty perms
+
+==================== 部署全部完成 ====================
+后台启动可视化命令：
+source ~/spark_venv/bin/activate && nohup superset run -h 0.0.0.0 -p 8088 --with-threads > superset_run.log 2>&1 &
+访问地址：http://zh-pc:8088
+登录账号：admin  密码：123456
+MySQL业务库连接串：mysql+mysqldb://root:123456@127.0.0.1:3306/card_analysis
