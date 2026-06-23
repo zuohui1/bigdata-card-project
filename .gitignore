@@ -1,0 +1,7 @@
+logs/
+*.log
+data/
+backup/
+.idea/
+*.pyc
+__pycache__/
