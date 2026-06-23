@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  bigdata-platform:
+    build: .
+    container_name: card-big-env
+    hostname: bigdata-node
+    # 开启特权模式，支持Hadoop、HBase本地存储操作
+    privileged: true
+    # 端口映射：MySQL、Hive、Spark、Superset
+    ports:
+      - "3306:3306"
+      - "10000:10000"
+      - "8088:8088"
+      - "8080:8080"
+      - "8081:8081"
+    # 全局挂载整个项目目录（和你inspect挂载信息保持一致）
+    volumes:
+      - /home/zuohui/bigdata_card:/mnt/bigdata
+    # 交互式终端，支持进入容器执行脚本
+    stdin_open: true
+    tty: true
+    # 容器启动自动配置环境变量
+    environment:
+      TZ: Asia/Shanghai
+      JAVA_HOME: /usr/local/jdk11
+      HADOOP_HOME: /usr/local/hadoop
+      HIVE_HOME: /usr/local/hive
+      SPARK_HOME: /usr/local/spark
